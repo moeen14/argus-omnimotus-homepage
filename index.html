@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Argus Omnimotus — Agricultural Robotics Research and Education</title>
+  <meta name="description" content="Argus Omnimotus: an open-source modular swerve-drive robot platform for agricultural robotics research and education.">
+  <meta name="author" content="Moeen Ul Islam, Bishal Adhikari, J. Alex Thomasson, Dong Chen">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/bulma.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="slides.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main-content">Skip to content</a>
+<main id="main-content">
+  <!-- Adapted from IRIS: centered publication hero, author block, and resource links. -->
+  <section class="hero publication-header"><div class="hero-body"><div class="container is-max-desktop"><div class="columns is-centered"><div class="column has-text-centered">
+    <p class="publication-kicker">MISSISSIPPI STATE UNIVERSITY</p>
+    <h1 class="title publication-title"><span class="project-name">Argus Omnimotus</span><span class="paper-subtitle">An Open-Source Modular Swerve-Drive Robot Platform<br class="desktop-break"> for Agricultural Robotics Research and Education</span></h1>
+    <div class="publication-authors"><a class="author-block" href="https://scholar.google.com/citations?user=dwvTqeUAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Moeen Ul Islam</a><a class="author-block" href="https://scholar.google.com/citations?hl=en&amp;user=_4LvWvIAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">Bishal Adhikari</a><a class="author-block" href="https://scholar.google.com/citations?user=70LHUmcAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">J. Alex Thomasson</a><a class="author-block" href="https://scholar.google.com/citations?user=LkYbKuMAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Dong Chen</a></div>
+    <p class="publication-affiliation">Department of Agricultural and Biological Engineering<br>Mississippi State University</p>
+    <div class="publication-links">
+      <!-- Temporary local destinations; replace href values with release URLs later. -->
+      <a class="button is-rounded is-dark" href="#abstract"><svg class="resource-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 16h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Paper</a>
+      <a class="button is-rounded is-dark" href="#resources"><svg class="resource-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.71 2.63 1.21 3.27.92.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.54 0-1.22.44-2.22 1.15-3-.12-.29-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.54.23 2.67.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.64 5.25-5.15 5.53.4.35.76 1.03.76 2.08v3.11c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8z"/></svg>GitHub</a>
+      <a class="button is-rounded is-dark" href="#code-models"><span class="huggingface-icon" aria-hidden="true">🤗</span>Vision Models</a>
+      <a class="button is-rounded is-dark" href="#resources"><svg class="resource-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m10 3-.6 2.2-1.8 1.1-2.2-.6-2 3.5L5 10.8v2.4l-1.6 1.6 2 3.5 2.2-.6 1.8 1.1.6 2.2h4l.6-2.2 1.8-1.1 2.2.6 2-3.5-1.6-1.6v-2.4l1.6-1.6-2-3.5-2.2.6-1.8-1.1L14 3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Project Resources</a>
+    </div>
+  </div></div></div></div></section>
+
+  <!-- Replace this placeholder with the video element documented in README.md. -->
+  <section class="hero teaser" aria-label="Project video"><div class="container is-max-desktop"><figure>
+    <div class="video-placeholder" role="img" aria-label="Project demonstration video placeholder. Video coming soon.">
+      <span class="video-symbol" aria-hidden="true"><svg viewBox="0 0 40 40" width="40" height="40"><path d="m15 10 16 10-16 10z" fill="currentColor"/></svg></span>
+      <span class="video-title">Argus in action</span><span class="video-note">Project demonstration video · Coming soon</span>
+    </div>
+    <figcaption>A compact platform for row navigation, manipulation, and autonomous task verification.</figcaption>
+  </figure></div></section>
+
+  <!-- IRIS abstract block, with a quiet background and readable centered column. -->
+  <section class="section hero is-light" id="abstract"><div class="container is-max-desktop"><div class="columns is-centered"><div class="column is-four-fifths">
+    <h2 class="title is-3 has-text-centered">Abstract</h2>
+    <div class="content abstract-copy"><p>Agricultural production faces persistent labor shortages and increasing demand for automation, creating a need for robotic systems capable of sensing, decision-making, manipulation, and autonomous operation in complex field environments. At the same time, progress in agricultural robotics is constrained by the limited availability of affordable, flexible, and accessible research platforms that can support both technology development and hands-on workforce training. This paper presents <em>Argus Omnimotus</em>, an <strong>open-source, modular, low-cost agricultural robotics platform</strong> designed to advance research and education in autonomous agricultural systems. The platform features a <strong>four-wheel independent swerve-drive chassis</strong>, swappable computing architecture, distributed embedded control, multimodal sensing, and a configurable manipulation system that supports diverse research applications. Built around a unified <strong>sense-plan-act-verify autonomy framework</strong>, the platform enables the study and teaching of perception, control, navigation, manipulation, and autonomous verification on a single hardware platform. To demonstrate its utility for agricultural research, the platform was evaluated through representative row-crop navigation and manipulation tasks under <strong>varying lighting and soil conditions</strong>. Experimental results show that the platform supports reliable lane following, autonomous row-to-row navigation, target identification, seed-dispensing and plant-manipulation operations, and <strong>closed-loop verification of task success</strong>. The modular architecture allows individual autonomy components to be <strong>independently tested, modified, and validated</strong>, making the system suitable for rapid prototyping and experimentation in agricultural robotics. In addition, controller-tuning studies and integrated testbed trials illustrate how the platform can be used to teach key concepts in robotics, embedded systems, computer vision, and autonomous decision-making through hands-on learning experiences. By combining affordability, modularity, open-source accessibility, and complete autonomy capabilities, <em>Argus Omnimotus</em> provides a practical foundation for <strong>agricultural robotics research, technology development, and workforce training</strong>.</p></div>
+  </div></div></div></section>
+
+  <section class="section" id="platform"><div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Platform overview</h2>
+    <div class="platform-overview-layout">
+      <figure class="paper-figure"><img src="assets/fig-chassis-overview.png" width="3762" height="2073" loading="lazy" alt="Annotated Argus robot showing the mechanical, sensing and actuation, and computing and control layers"></figure>
+      <div class="platform-contributions">
+        <p><strong>Independent swerve mobility.</strong> Four drive and four steering axes enable sideways motion, simultaneous position and heading correction, and software-selectable skid-steer operation.</p>
+        <p><strong>Modular, accessible hardware.</strong> A 3D-printed chassis, swappable computer, and configurable mounts support adaptation. The platform costs approximately $680, excluding the high-level computer.</p>
+        <p><strong>Integrated sensing and control.</strong> Two cameras, seven range sensors, and motion feedback work with a Jetson AGX Orin and two ESP32 controllers.</p>
+        <p><strong>Manipulation with verification.</strong> A 3-DOF hybrid arm supports plant-surrogate toppling and seed-surrogate dispensing, with feedback to check task outcomes.</p>
+        <p><strong>A complete research and teaching platform.</strong> The sense–plan–act–verify framework connects row navigation, target detection, action, and verification while allowing subsystems to be tested and modified independently.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="section soft-section research-figure-section" id="autonomy"><div class="container is-max-desktop">
+<h2 class="title is-3 has-text-centered" id="autonomy-title">System Design and Autonomy</h2>
+<div class="research-carousel" data-carousel data-labels='["Vision navigation","Actuation & swerve","Sense–Plan–Act–Verify"]' aria-labelledby="autonomy-title">
+<div class="slide-window"><div class="slide-track"><article class="research-slide" id="navigation">
+    <h3 class="has-text-centered">Vision-based navigation</h3>
+    <p class="section-intro technique-description">RailNav projects segmented row rails into a <strong>bird’s-eye view (BEV)</strong> to estimate centerline and heading errors for swerve-drive correction.</p>
+    <figure class="paper-figure"><img src="assets/railnav_sequence_final.png" loading="lazy" alt="RailNav pipeline: camera image, rail segmentation, bird’s-eye projection, and centerline recovery for lateral and heading error estimation"></figure>
+  </article>
+<article class="research-slide" id="mechanisms">
+    <h3 class="has-text-centered">Hybrid actuation and swerve drive</h3>
+    <p class="section-intro technique-description">A <strong>3-DOF hybrid arm</strong> integrates contact manipulation and metered dispensing, while each swerve module independently controls wheel propulsion and steering.</p>
+    <figure class="paper-figure"><img src="assets/fig-manipulation-arm-swerve-drive.png" loading="lazy" alt="Paper Figure 2: hybrid manipulation arm with seed-metering mechanism and a swerve module with independent steering, wheel drive, and encoder feedback"></figure>
+  </article>
+<article class="research-slide" id="closed-loop">
+    <h3 class="has-text-centered">Sense–Plan–Act–Verify</h3>
+    <p class="section-intro technique-description">Target alignment and task detection guide manipulation; <strong>post-action visual verification</strong> checks the outcome and triggers a retry when the task fails.</p>
+    <figure class="paper-figure"><img src="assets/fig-closed-loop-sequences.png" loading="lazy" alt="Closed-loop seed-dispensing and plant-toppling sequences showing alignment, detection, actuation, visual verification, and retry paths"></figure>
+  </article></div></div>
+</div></div></section>
+
+  <section class="section research-figure-section" id="results"><div class="container is-max-desktop">
+<h2 class="title is-3 has-text-centered" id="results-title">Experimental Results</h2>
+<div class="research-carousel" data-carousel data-labels='["Edge perception","Controller tuning","Navigation performance"]' aria-labelledby="results-title">
+<div class="slide-window"><div class="slide-track"><article class="research-slide">
+      <h3 class="has-text-centered">Perception across edge-computing platforms</h3>
+      <p class="section-intro technique-description">Isolated model benchmarks show Orin Nano and Hailo-8 operating at <strong>7.7–9.4 W</strong>, compared with <strong>23.2–26.5 W</strong> for AGX Orin; the full concurrent autonomy stack was validated only on AGX Orin.</p>
+      <figure class="paper-figure"><img src="assets/accuracy_latency_power_tradeoff.png" loading="lazy" alt="Paper Figure 7: accuracy versus end-to-end latency for task detection, task validation, and RailNav across AGX Orin, Orin Nano, Hailo-8, and Raspberry Pi 5 CPU"></figure>
+    </article>
+<article class="research-slide">
+<h3 class="has-text-centered">Controller gain and deadband tuning</h3>
+<p class="section-intro technique-description">For platform alignment, nominal deadband reduced settling time from <strong>22.48 to 7.15 s</strong> compared with the smallest deadband, with a final error of <strong>2.54 px</strong>—illustrating the trade-off between convergence speed and precision.</p>
+<figure class="paper-figure"><img src="assets/fig-tuning-comparison.png" loading="lazy" alt="Paper Figure 8: controller deadband and gain sweeps for platform alignment, centerline alignment, and time-of-flight stopping; marker size indicates overshoot and stars indicate nominal settings"></figure>
+</article>
+<article class="research-slide">
+      <h3 class="has-text-centered">Navigation accuracy and controller tuning</h3>
+      <p class="section-intro technique-description">Low gain at nominal speed achieved <strong>31.50 px lateral RMSE</strong> and <strong>1.15° angular RMSE</strong>; nominal gain and speed were retained for repeated-run stability, with <strong>100% mean course completion</strong>.</p>
+      <figure class="paper-figure"><img src="assets/fig-navigation-tracing-combined.png" loading="lazy" alt="Paper Figure 10: lateral and angular error traces and testbed trajectories under five controller gain and speed settings"></figure>
+    </article></div></div>
+</div></div></section>
+
+  <section class="section soft-section" id="resources"><div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Open-source resources</h2>
+    <p class="section-intro resource-credit">If you use or build on Argus Omnimotus, please <a href="#BibTeX">cite our work</a> and credit the project.</p>
+    <div class="resource-cards">
+      <!-- TODO: Replace the example.com URLs below with your CAD, components, and wiring websites. -->
+      <a class="resource-card-link" href="https://example.com/cad" target="_blank" rel="noopener noreferrer"><span class="resource-card-icon" aria-hidden="true">◇</span><h3>CAD & assembly</h3><p>Chassis, swerve drive, and hybrid manipulation.</p><span class="resource-card-action">View mechanical design <span aria-hidden="true">↗</span></span></a>
+      <a class="resource-card-link" href="https://example.com/components" target="_blank" rel="noopener noreferrer"><span class="resource-card-icon" aria-hidden="true">☷</span><h3>Components</h3><p>Hardware and electronics component inventory.</p><span class="resource-card-action">View component list <span aria-hidden="true">↗</span></span></a>
+      <a class="resource-card-link" href="https://example.com/wiring" target="_blank" rel="noopener noreferrer"><span class="resource-card-icon" aria-hidden="true">⌁</span><h3>Circuits & wiring</h3><p>Distributed controllers, interfaces, and power.</p><span class="resource-card-action">View electronics architecture <span aria-hidden="true">↗</span></span></a>
+      <!-- TODO: Replace the GitHub and Hugging Face homepages below with your repository and model URLs. -->
+      <a class="resource-card-link software-resource" id="code-resource" href="https://github.com/" target="_blank" rel="noopener noreferrer"><span class="resource-card-icon" aria-hidden="true">&lt;/&gt;</span><h3>Code</h3><p>Python autonomy and ESP32 firmware.</p><span class="resource-card-action">Explore the software <span aria-hidden="true">↗</span></span></a>
+      <a class="resource-card-link software-resource" id="code-models" href="https://huggingface.co/" target="_blank" rel="noopener noreferrer"><span class="resource-card-icon" aria-hidden="true">🤗</span><h3>Vision Models</h3><p>Task detection, task validation, and RailNav.</p><span class="resource-card-action">Explore the models <span aria-hidden="true">↗</span></span></a>
+    </div>
+  </div></section>
+
+  <section class="section citation-section" id="BibTeX"><div class="container is-max-desktop"><div class="columns is-centered"><div class="column is-four-fifths">
+    <div class="citation-header"><h2 class="title is-4">Citation</h2><a class="citation-download" href="docs/argus-omnimotus.bib" download>Download BibTeX ↓</a></div>
+    <pre><code>@unpublished{islam2026argus,
+  title  = {{Argus Omnimotus}: An Open-Source Modular Swerve-Drive
+            Robot Platform for Agricultural Robotics Research
+            and Education},
+  author = {Islam, Moeen Ul and Adhikari, Bishal and
+            Thomasson, J. Alex and Chen, Dong},
+  year   = {2026},
+  note   = {Unpublished manuscript, Mississippi State University}
+}</code></pre>
+  </div></div></div></section>
+</main>
+<footer class="footer"><div class="container is-max-desktop has-text-centered"><p>Argus Omnimotus · Mississippi State University</p><p>Adapted from the <a href="https://github.com/intuitive-robots/iris-project-page">IRIS project page</a> and the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>, originally based on <a href="https://nerfies.github.io/">Nerfies</a>.</p><p><a href="docs/ATTRIBUTION.md">Attribution & licensing</a> · <a href="mailto:dchen@abe.msstate.edu">Contact</a></p></div></footer>
+</body>
+</html>
