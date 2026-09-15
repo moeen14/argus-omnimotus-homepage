@@ -111,6 +111,67 @@ document.querySelectorAll('[data-carousel]').forEach(carousel => {
   snap(); show(0);
 });
 
+const projectVideoShell = document.querySelector('[data-project-video]');
+const projectVideo = projectVideoShell?.querySelector('video');
+const videoReplay = projectVideoShell?.querySelector('.video-replay');
+
+if (projectVideoShell && projectVideo && videoReplay) {
+  let fullyVisible = false;
+  let completed = false;
+
+  const setReplayVisible = visible => {
+    videoReplay.hidden = !visible;
+  };
+
+  const autoplayWhenVisible = async () => {
+    if (!fullyVisible || completed || document.hidden || !projectVideo.paused) return;
+    try {
+      await projectVideo.play();
+      setReplayVisible(false);
+    } catch {
+      setReplayVisible(true);
+    }
+  };
+
+  new IntersectionObserver(entries => {
+    fullyVisible = entries[0].isIntersecting && entries[0].intersectionRatio >= .999;
+    if (fullyVisible) autoplayWhenVisible();
+    else if (!projectVideo.paused) projectVideo.pause();
+  }, {threshold: [0, .999, 1]}).observe(projectVideoShell);
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden && !projectVideo.paused) projectVideo.pause();
+    else autoplayWhenVisible();
+  });
+
+  projectVideo.addEventListener('ended', () => {
+    completed = true;
+    projectVideo.pause();
+    projectVideo.currentTime = 0;
+    setReplayVisible(true);
+  });
+
+  projectVideo.addEventListener('play', () => {
+    if (completed) {
+      projectVideo.pause();
+      setReplayVisible(true);
+      return;
+    }
+    setReplayVisible(false);
+  });
+
+  videoReplay.addEventListener('click', async () => {
+    completed = false;
+    projectVideo.muted = false;
+    setReplayVisible(false);
+    try {
+      await projectVideo.play();
+    } catch {
+      setReplayVisible(true);
+    }
+  });
+}
+
 const circuitModal = document.querySelector('#circuit-modal');
 const circuitModalTrigger = document.querySelector('.circuit-modal-trigger');
 const circuitModalClose = circuitModal?.querySelector('.circuit-modal-close');

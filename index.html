@@ -29,11 +29,15 @@
     </div>
   </div></div></div></div></section>
 
-  <!-- Replace this placeholder with the video element documented in README.md. -->
   <section class="hero teaser" aria-label="Project video"><div class="container is-max-desktop"><figure>
-    <div class="video-placeholder" role="img" aria-label="Project demonstration video placeholder. Video coming soon.">
-      <span class="video-symbol" aria-hidden="true"><svg viewBox="0 0 40 40" width="40" height="40"><path d="m15 10 16 10-16 10z" fill="currentColor"/></svg></span>
-      <span class="video-title">Argus in action</span><span class="video-note">Project demonstration video · Coming soon</span>
+    <div class="project-video-shell" data-project-video>
+      <video class="project-video" muted playsinline controls preload="auto" poster="assets/homepage-video-poster.jpg" aria-label="Argus Omnimotus project demonstration">
+        <source src="assets/homepage-video.mp4" type="video/mp4">
+        Your browser does not support embedded video. <a href="assets/homepage-video.mp4">Download the project demonstration video.</a>
+      </video>
+      <button class="video-replay" type="button" aria-label="Replay project video" title="Replay video" hidden>
+        <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><path d="m15 10 16 10-16 10z" fill="currentColor"/></svg>
+      </button>
     </div>
     <figcaption>A compact platform for row navigation, manipulation, and autonomous task verification.</figcaption>
   </figure></div></section>
